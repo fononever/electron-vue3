@@ -1,6 +1,7 @@
 <template lang="pug">
 .home
   HelloWorld(msg="Welcome to Your Vue.js + TypeScript App")
+  p 测试
 
 </template>
 
