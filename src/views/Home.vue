@@ -1,18 +1,20 @@
 <template lang="pug">
-.home
-  HelloWorld(msg="Welcome to Your Vue.js + TypeScript App")
-  p 测试
-
+.about
+  h1 home
+  router-link(to="/") about
+  HelloWorld(msg="测11试")
 </template>
-
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import { defineComponent, onMounted, ref } from "vue";
+import HelloWorld from "@/components/HelloWorld.vue";
 
-@Options({
+export default defineComponent({
   components: {
     HelloWorld,
   },
-})
-export default class Home extends Vue {}
+  setup() {
+    const num: number = 12;
+    return { num };
+  },
+});
 </script>

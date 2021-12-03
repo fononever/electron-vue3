@@ -36,12 +36,12 @@ module.exports = {
         },
         // mac 图标
         mac: {
-          icon: "build/icons/favicon.icns",
+          icon: "./build/images/icon.icns",
         },
         // windows 配置
         // win: {
         //   // windows图标路径
-        //   icon: "build/icons/favicon.ico",
+        //   icon: "build/icons/icon.ico",
         //   target: [
         //     {
         //       // 使用nsis打包成exe
@@ -61,9 +61,9 @@ module.exports = {
           oneClick: false, // 是否一键安装
           allowElevation: true, // 允许请求提升。 如果为false，则用户必须使用提升的权限重新启动安装程序。
           allowToChangeInstallationDirectory: true, // 允许修改安装目录
-          installerIcon: "./build/icons/favicon.ico", // 安装图标
-          uninstallerIcon: "./build/icons/favicon.ico", // 卸载图标
-          installerHeaderIcon: "./build/icons/favicon.ico", // 安装时头部图标
+          installerIcon: "./build/images/icon.ico", // 安装图标
+          uninstallerIcon: "./build/images/icon.ico", // 卸载图标
+          installerHeaderIcon: "./build/images/icon.ico", // 安装时头部图标
           createDesktopShortcut: true, // 创建桌面快捷方式
           createStartMenuShortcut: true, // 创建菜单快捷方式
           shortcutName: "electron-vue", // 简称
